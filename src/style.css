@@ -1,1 +1,27 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+.card {
+  width: 400px;
+  height: 600px;
+  justify-content: space-between;
+  border-radius: 4%;
+}
+.symbols {
+  font-size: 120px;
+  display: flex;
+  padding: 0px 10px;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
+.value {
+  font-size: 135px;
+  display: flex;
+  justify-content: center;
+}
