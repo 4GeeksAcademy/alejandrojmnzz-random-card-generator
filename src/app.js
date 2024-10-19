@@ -17,11 +17,10 @@ card.appendChild(cardBottom).classList = "symbols";
 
 let randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
 
-cardTop.innerHTML = `<span>${randomSymbol}<span/>`;
+cardTop.textContent = randomSymbol;
 
-cardBottom.innerHTML = `<span>${randomSymbol}<span/>`;
-cardBottom.style.justifyContent = "end";
-cardBottom.children[0].style.rotate = "180deg";
+cardBottom.textContent = randomSymbol;
+cardBottom.style.rotate = "180deg";
 
 if (randomSymbol == symbols[0] || randomSymbol == symbols[1]) {
   card.style.color = "red";
